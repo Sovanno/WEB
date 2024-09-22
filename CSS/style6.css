@@ -1,0 +1,107 @@
+*{
+    background-color: gainsboro;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#input-value {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.queue-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.queue-item {
+    width: 50px;
+    height: 50px;
+    background-color: #45a049;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease, scaleIn 0.5s ease;
+}
+
+.queue-item.remove {
+    animation: fadeOut 0.5s ease, scaleOut 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes scaleOut {
+    from { transform: scale(1); }
+    to { transform: scale(0); }
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 42.5%;
+    background-color: azure;
+}
+
+.left-btn{
+    margin-left: 37%;
+}
