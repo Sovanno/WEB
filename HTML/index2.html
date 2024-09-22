@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Формы</title>
+    <style>
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="text.html">Текст и заголовок</a></li>
+            <li><a href="images.html">Картинка и какой-то тескт</a></li>
+            <li><a href="lists.html">Отображение списков</a></li>
+            <li><a href="form.html">Формы</a></li>
+        </ul>
+    </nav>
+
+    <h1>Формы</h1>
+
+    <form method="get" action="form.html">
+        <fieldset>
+            <legend>Введите данные:</legend>
+
+            <label for="name">Логин:</label>
+            <input type="text" id="name" name="name" required autofocus>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="radio">Переключатель</label>
+            <input type="radio" name="radio" id="radio">
+
+            <label for="checkbox">Флаг</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+
+            <label for="hidden">Скрытое поле</label>
+            <input type="hidden" name="hidden" id="hidden">
+
+            <label for="color">Выберите цвет:</label>
+            <input type="color" id="color" name="color" disabled>
+
+            <label for="date">Введите дату:</label>
+            <input type="date" name="date" id="date">
+
+            <label for="datetime">Введите дату и время с учетом часового пояса:</label>
+            <input type="datetime" name="datetime" id="datetime">
+
+            <label for="datetime-local">Введите дату и время без учетом часового пояса:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="month">Введите год и месяц:</label>
+            <input type="month" name="month" id="month">
+
+            <label for="number">Введите число от -4 до 7:</label>
+            <input type="number" id="number" name="number" min="-4" max="7" required>
+
+            <label for="range">Ползунок:</label>
+            <input type="range" name="range" id="range">
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" pattern="\+\d-\d{3}-\d{3}-\d{4}" placeholder="+1-234-567-8901" required>
+
+            <label for="time">Введите время:</label>
+            <input type="time" name="time" id="time">
+
+            <label for="week">Введите год и неделю:</label>
+            <input type="week" name="week" id="week">
+
+            <label for="website">Введите адрес url:</label>
+            <input type="url" id="website" name="website" readonly>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Выберите пол</option>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+
+            <label for="file">Выберите файл:</label>
+            <input type="file" name="file" id="file">
+
+            <label for="image">Выберите фото:</label>
+            <input type="image" name="image" id="image">
+
+            <label for="books">Книги:</label>
+            <input list="books-list" id="books" name="books">
+            <datalist id="books-list">
+                <option value="Му-му">Му-му</option>
+                <option value="Заводной апельсин">Заводной апельсин</option>
+                <option value="Оно">Оно</option>
+                <option value="Метро 2033">Метро 2033</option>
+            </datalist>
+
+            <button type="submit">Отправить</button>
+        </fieldset>
+    </form>
+</body>
+</html>
