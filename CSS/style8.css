@@ -1,0 +1,48 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+  
+.search-results {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+  
+.search-results div {
+    cursor: pointer;
+    padding: 5px;
+}
+  
+.search-results div:hover {
+    background-color: #f2f2f2;
+}
+  
+.org-tree {
+    margin-top: 20px;
+}
+  
+.tree-root {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.tree-node {
+    margin-left: 20px;
+}
+  
+.tree-node.active {
+    background-color: #f2f2f2;
+}
